@@ -4,13 +4,14 @@
 </template>
 
 <script>
+  import * as $ from 'jquery';
+  import 'bootstrap';
+  import 'bootstrap/dist/css/bootstrap.min.css'
+
   export default {
-    name: 'App'
+    name: 'App',
   }
 
 </script>
 
-<style src="@/assets/stylesheets/style.css"></style>
-<style lang="scss">
-  @import '../node_modules/bootstrap/scss/bootstrap.scss';
-</style>
+<style src="@/assets/stylesheets/myStyle.css"></style>

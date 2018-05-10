@@ -14,11 +14,11 @@ export default new Router({
       redirect: '/login'
     },
     {
-      path: '/',
+      path: '',
       component: layoutFull,
       children: [
         {
-          path: 'page-not-found',
+          path: '/page-not-found',
           component: () => import('@/components/errors/404.vue'),
           name: '404',
           meta: {
@@ -26,8 +26,17 @@ export default new Router({
           }
         },
         {
-          path: 'home',
+          path: '/home',
           component: () => import('@/components/home/index.vue'),
+          name: 'home',
+          meta: {
+            title: 'Home',
+            active: 'home'
+          }
+        },
+        {
+          path: '/listMedical',
+          component: () => import('@/components/listMedical/list.vue'),
           name: 'home',
           meta: {
             title: 'Home',

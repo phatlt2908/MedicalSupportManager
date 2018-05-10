@@ -4,14 +4,12 @@
 
 <script>
   export default {
-    name: 'side',
     data() {
       return {
 
       }
     },
   }
-
 </script>
 
 <style scoped>
