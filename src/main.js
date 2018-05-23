@@ -3,6 +3,8 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import './services/axios.js'
+import './services/snackbar.js'
 
 Vue.config.productionTip = false
 

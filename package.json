@@ -10,29 +10,23 @@
     "build": "node build/build.js"
   },
   "dependencies": {
-    "node-sass": "^4.9.0",
-    "sass-loader": "^7.0.1",
-    "vue": "^2.5.2",
-    "vue-router": "^3.0.1",
+    "axios": "^0.18.0",
     "babel-polyfill": "^6.26.0",
     "bootstrap": "^4.0.0",
     "bootstrap-datepicker": "^1.7.1",
-    "chart.js": "^2.7.1",
     "datatables": "^1.10.13",
-    "easy-pie-chart": "^2.1.7",
     "file-loader": "^1.1.5",
-    "fullcalendar": "^3.6.2",
     "jquery": "^3.2.1",
     "jquery-sparkline": "^2.4.0",
-    "jvectormap": "^2.0.4",
-    "load-google-maps-api": "^1.0.0",
     "lodash": "^4.17.4",
-    "masonry-layout": "^4.2.0",
     "moment": "^2.19.1",
+    "node-sass": "^4.9.0",
+    "node-snackbar": "^0.1.10",
     "perfect-scrollbar": "^1.1.0",
     "popper.js": "^1.12.6",
-    "skycons": "^1.0.0"
-
+    "sass-loader": "^7.0.1",
+    "vue": "^2.5.2",
+    "vue-router": "^3.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",

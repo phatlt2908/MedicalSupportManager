@@ -35,12 +35,21 @@ export default new Router({
           }
         },
         {
-          path: '/listMedical',
-          component: () => import('@/components/listMedical/list.vue'),
-          name: 'home',
+          path: '/hosList',
+          component: () => import('@/components/hosList/list.vue'),
+          name: 'list',
           meta: {
-            title: 'Home',
-            active: 'home'
+            title: 'hosList',
+            active: 'hosList'
+          }
+        },
+        {
+          path: '/detail/:id',
+          component: () => import('@/components/detail/detail.vue'),
+          name: 'detail',
+          meta: {
+            title: 'detail',
+            active: 'hosList'
           }
         }
       ]
