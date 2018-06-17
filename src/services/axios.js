@@ -2,7 +2,8 @@ import Vue from 'vue'
 import Axios from 'axios'
 
 var axios = Axios.create({
-  baseURL: "http://localhost:3001",
+  // baseURL: "http://localhost:3001",
+  baseURL: "https://phatlt-hospital-api.herokuapp.com",
   timeout: 20000
 })
 
@@ -34,6 +35,10 @@ var api = {
     return axios.put('/hospitals/disable', {
       'id': id
     })
+  },
+
+  getFeedbackList() {
+    return axios.get('/feedback')
   }
 }
 

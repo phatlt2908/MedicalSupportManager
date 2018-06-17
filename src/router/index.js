@@ -51,6 +51,15 @@ export default new Router({
             title: 'detail',
             active: 'hosList'
           }
+        },
+        {
+          path: '/feedback',
+          component: () => import('@/components/feedbackList/feedbackList.vue'),
+          name: 'feedbackList',
+          meta: {
+            title: 'Feedback list',
+            active: 'feedback'
+          }
         }
       ]
     },

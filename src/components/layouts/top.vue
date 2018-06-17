@@ -26,8 +26,8 @@
             <li class="nav-item dropdown" :class="{ 'active' : $route.meta.active === 'hosList' }">
               <router-link to="/home" class="nav-link">Báo cáo</router-link>
             </li>
-            <li class="nav-item" :class="{ 'active' : $route.meta.active === 'hosList' }">
-              <router-link to="/home" class="nav-link">Phản hồi</router-link>
+            <li class="nav-item" :class="{ 'active' : $route.meta.active === 'feedback' }">
+              <router-link to="/feedback" class="nav-link">Phản hồi</router-link>
             </li>
           </ul>
           <form class="form-inline mt-2 mt-md-0">

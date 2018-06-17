@@ -1,16 +1,16 @@
 <template>
   <div class="container">
     <table class="table table-striped">
-      <thead>
+      <thead class="thread-dark">
         <tr class="row">
           <th class="col-sm-1" scope="col">#</th>
           <th class="col-sm-4" scope="col">Tên</th>
           <th class="col-sm-5" scope="col">Địa chỉ</th>
           <th class="col-sm-2" scope="col">Tọa độ</th>
         </tr>
-      </thead class="thread-dark">
+      </thead>
       <tbody>
-        <tr class="row" v-for="item in hosList">
+        <tr class="row" v-for="item in hosList" :key="item.hos_id">
           <td class="col-sm-1">
             <router-link :to="'/detail/' + item._id">
               {{ item.hos_id }}
